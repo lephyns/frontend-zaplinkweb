@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-11T15:11:46.273Z",
+    "end": "2023-03-11T15:11:48.712Z",
+    "duration": 2439,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3db479b7-2703-4d6b-a740-6f59fea35a27",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_search.test.js",
+      "file": "tests/e2e/specs/contact_search.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "90e74257-7649-4c89-b758-a40a1b2ebb74",
+          "title": "Busca",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "aefcd777-4624-4e75-a0d7-63cb715d5151",
+              "title": "Dado que eu tenho o seguinte contato Yuri Silva",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Quando faço a busca deste contato",
+                  "fullTitle": "Busca Dado que eu tenho o seguinte contato Yuri Silva Quando faço a busca deste contato",
+                  "timedOut": null,
+                  "duration": 1361,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_search.test.js/Quando faço a busca deste contato -- after each hook.png\"",
+                  "code": "cy.dash();\ncy.searchContact(contact.number); // cy.get('#loader', {timeout: 5000}).should('not.visible')",
+                  "err": {},
+                  "uuid": "9e0698d6-43e9-444d-b4c3-500721cfc9dd",
+                  "parentUUID": "aefcd777-4624-4e75-a0d7-63cb715d5151",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Devo ver somente este contato no dashboard",
+                  "fullTitle": "Busca Dado que eu tenho o seguinte contato Yuri Silva Devo ver somente este contato no dashboard",
+                  "timedOut": null,
+                  "duration": 31,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_search.test.js/Devo ver somente este contato no dashboard -- after each hook.png\"",
+                  "code": "cy.contactItem().should('have.length', 1);\ncy.contactItem().contains(contact.name);\ncy.contactItem().contains(contact.description);",
+                  "err": {},
+                  "uuid": "30a5c960-be98-44b3-b133-213ca14a4935",
+                  "parentUUID": "aefcd777-4624-4e75-a0d7-63cb715d5151",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "9e0698d6-43e9-444d-b4c3-500721cfc9dd",
+                "30a5c960-be98-44b3-b133-213ca14a4935"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1392,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "e4c6655d-36c4-4a0d-8b47-070d00ec090e",
+              "title": "Quando busco por um contato não cadastrado",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Deve retornar mensagem de alerta",
+                  "fullTitle": "Busca Quando busco por um contato não cadastrado Deve retornar mensagem de alerta",
+                  "timedOut": null,
+                  "duration": 431,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_search.test.js/Deve retornar mensagem de alerta -- after each hook.png\"",
+                  "code": "cy.get('.message-body').contains('Contato não encontrado :(');",
+                  "err": {},
+                  "uuid": "a958053e-ec77-4ca1-9468-94ff06c9fe96",
+                  "parentUUID": "e4c6655d-36c4-4a0d-8b47-070d00ec090e",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "a958053e-ec77-4ca1-9468-94ff06c9fe96"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 431,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": true,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

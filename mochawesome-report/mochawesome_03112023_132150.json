@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-11T16:21:48.570Z",
+    "end": "2023-03-11T16:21:50.144Z",
+    "duration": 1574,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bab53053-e055-43a9-abc7-2486434f2a00",
+      "title": "",
+      "fullFile": "tests/e2e/specs/login.test.js",
+      "file": "tests/e2e/specs/login.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "048b1c73-eeef-463e-95cf-920f35397ca6",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "ac8e584d-298e-4e83-b1cb-3bedd9aae70f",
+              "title": "Quando submeto credenciais válidas",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Deve exibir a área logada",
+                  "fullTitle": "Login Quando submeto credenciais válidas Deve exibir a área logada",
+                  "timedOut": null,
+                  "duration": 1287,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/login.test.js/Deve exibir a área logada -- after each hook.png\"",
+                  "code": "cy.contains('h4', 'Seu gerenciador digital de contatos').should('be.visible');",
+                  "err": {},
+                  "uuid": "27a7e459-0fcc-40d2-b52c-deaab046b21d",
+                  "parentUUID": "ac8e584d-298e-4e83-b1cb-3bedd9aae70f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "27a7e459-0fcc-40d2-b52c-deaab046b21d"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1287,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": true,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

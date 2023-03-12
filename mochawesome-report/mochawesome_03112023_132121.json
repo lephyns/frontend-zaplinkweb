@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-11T16:21:20.965Z",
+    "end": "2023-03-11T16:21:21.661Z",
+    "duration": 696,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "79c7f08b-eea4-4075-9a44-b21e0435c8fe",
+      "title": "",
+      "fullFile": "tests/e2e/specs/check_app_on.test.js",
+      "file": "tests/e2e/specs/check_app_on.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "24118dcd-dd08-4132-a125-63d3367c790c",
+          "title": "Verifica se o app está online",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acesso a página inicial",
+              "fullTitle": "Verifica se o app está online Acesso a página inicial",
+              "timedOut": null,
+              "duration": 246,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"assets/screenshots/check_app_on.test.js/Acesso a página inicial -- after each hook.png\"",
+              "code": "cy.visit('/');",
+              "err": {},
+              "uuid": "3b15b36e-f667-4737-b077-384082f024eb",
+              "parentUUID": "24118dcd-dd08-4132-a125-63d3367c790c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3b15b36e-f667-4737-b077-384082f024eb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 246,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": true,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

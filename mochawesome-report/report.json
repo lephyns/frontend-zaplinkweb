@@ -1,0 +1,2081 @@
+{
+  "stats": {
+    "suites": 18,
+    "tests": 39,
+    "passes": 31,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-03-11T15:11:33.012Z",
+    "end": "2023-03-11T16:21:50.144Z",
+    "duration": 25003,
+    "testsRegistered": 39,
+    "passPercent": 79.48717948717949,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 6,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "87c32b55-fae9-4488-9822-acea31038760",
+      "title": "",
+      "fullFile": "tests/e2e/specs/check_app_on.test.js",
+      "file": "tests/e2e/specs/check_app_on.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f68d730b-a3d6-45bc-9d4c-4ba48128352e",
+          "title": "Verifica se o app está online",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acesso a página inicial",
+              "fullTitle": "Verifica se o app está online Acesso a página inicial",
+              "timedOut": null,
+              "duration": 224,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"assets/screenshots/check_app_on.test.js/Acesso a página inicial -- after each hook.png\"",
+              "code": "cy.visit('/');",
+              "err": {},
+              "uuid": "1d8b717a-320d-442f-b66f-88def5593597",
+              "parentUUID": "f68d730b-a3d6-45bc-9d4c-4ba48128352e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1d8b717a-320d-442f-b66f-88def5593597"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 224,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "4a648669-fdce-4b37-9a9f-36a46eb7104c",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_remove.test.js",
+      "file": "tests/e2e/specs/contact_remove.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ed58a9d4-a8be-46fc-bca5-62bbac2a4945",
+          "title": "Remover contato",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "35d3e155-8948-432c-98e7-a3ccfef501d9",
+              "title": "Dado que Lucas Silva é um contato indesejado",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Quando apago este contato",
+                  "fullTitle": "Remover contato Dado que Lucas Silva é um contato indesejado Quando apago este contato",
+                  "timedOut": null,
+                  "duration": 1541,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_remove.test.js/Quando apago este contato -- after each hook.png\"",
+                  "code": "cy.dash();\ncy.removeContact(contact.number);",
+                  "err": {},
+                  "uuid": "8ca40734-4f5f-4e73-8555-78e5162435f0",
+                  "parentUUID": "35d3e155-8948-432c-98e7-a3ccfef501d9",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Não deve ser exibido no dashboard",
+                  "fullTitle": "Remover contato Dado que Lucas Silva é um contato indesejado Não deve ser exibido no dashboard",
+                  "timedOut": null,
+                  "duration": 359,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_remove.test.js/Não deve ser exibido no dashboard -- after each hook.png\"",
+                  "code": "cy.searchContact(contact.number);\ncy.get('.message-body').contains('Contato não encontrado :(');",
+                  "err": {},
+                  "uuid": "aff6f076-395b-4866-9bcd-3f94fed1b321",
+                  "parentUUID": "35d3e155-8948-432c-98e7-a3ccfef501d9",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "8ca40734-4f5f-4e73-8555-78e5162435f0",
+                "aff6f076-395b-4866-9bcd-3f94fed1b321"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1900,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "318c8ae1-ebf7-4800-8cf3-b8613d8df4ca",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_save.test.js",
+      "file": "tests/e2e/specs/contact_save.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a93dd403-aa20-49f3-9456-9486cca723df",
+          "title": "Cadastro de contatos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "ed6e5bda-6a24-41b2-aa99-d5531bbf47d4",
+              "title": "Novo contato",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "bc2d9a7d-7443-415d-9fdb-658d8c82bd6d",
+                  "title": "Quando submeto o cadastro completo",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Deve cadastrar este contato",
+                      "fullTitle": "Cadastro de contatos Novo contato Quando submeto o cadastro completo Deve cadastrar este contato",
+                      "timedOut": null,
+                      "duration": 19,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": "\"assets/screenshots/contact_save.test.js/Deve cadastrar este contato -- after each hook.png\"",
+                      "code": "cy.contactList().contains(contact.name);",
+                      "err": {
+                        "message": "AxiosError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Request failed with status code 409\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `after each` hook we are skipping all of the remaining tests.",
+                        "estack": "AxiosError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Request failed with status code 409\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `after each` hook we are skipping all of the remaining tests.\n    at nt (http://localhost:8080/js/chunk-vendors.c98cae21.js:21:27412)\n    at XMLHttpRequest.u (http://localhost:8080/js/chunk-vendors.c98cae21.js:21:30456)",
+                        "diff": null
+                      },
+                      "uuid": "dae1d5f5-2717-4936-b51e-6a1d7ac6717e",
+                      "parentUUID": "bc2d9a7d-7443-415d-9fdb-658d8c82bd6d",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [
+                    "dae1d5f5-2717-4936-b51e-6a1d7ac6717e"
+                  ],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 19,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "41163aee-3615-4953-9a12-d347982ba6be",
+                  "title": "Quando submeto o cadastro sem o nome",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Deve exibir a notificação Nome  obrigatrio",
+                      "fullTitle": "Cadastro de contatos Novo contato Quando submeto o cadastro sem o nome Deve exibir a notificação Nome  obrigatrio",
+                      "timedOut": null,
+                      "duration": 0,
+                      "state": "skipped",
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "//Este código louco é para tirar os caracteres especiais da const expectNotice e vai substituir eles por nada\n// cy.loginAlert(expectMessage).should('be.visible')\ncy.alertName().contains(expectMessage);",
+                      "err": {},
+                      "uuid": "911967bc-c1a0-48e0-ad5c-63829bb08e7f",
+                      "parentUUID": null,
+                      "isHook": false,
+                      "skipped": true
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [
+                    "911967bc-c1a0-48e0-ad5c-63829bb08e7f"
+                  ],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "1fe774a2-773f-4b9e-829f-f976e6e49cd4",
+                  "title": "Quando submeto o cadastro sem o WhatsApp",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Deve exibir a nitificação: WhatsApp é obrigatório.",
+                      "fullTitle": "Cadastro de contatos Novo contato Quando submeto o cadastro sem o WhatsApp Deve exibir a nitificação: WhatsApp é obrigatório.",
+                      "timedOut": null,
+                      "duration": 0,
+                      "state": "skipped",
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "cy.alertNumber().contains(expectMessage);",
+                      "err": {},
+                      "uuid": "df7cdc6e-3408-414c-b71c-eb0d79373b22",
+                      "parentUUID": null,
+                      "isHook": false,
+                      "skipped": true
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [
+                    "df7cdc6e-3408-414c-b71c-eb0d79373b22"
+                  ],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "0a26c6fb-e8a3-48ec-a849-85740606f736",
+                  "title": "Quando submeto o cadastro sem o assunto",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Deve exibir a nitificação: Assunto é obrigatório.",
+                      "fullTitle": "Cadastro de contatos Novo contato Quando submeto o cadastro sem o assunto Deve exibir a nitificação: Assunto é obrigatório.",
+                      "timedOut": null,
+                      "duration": 0,
+                      "state": "skipped",
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "cy.alertDesc().contains(expectMessage);",
+                      "err": {},
+                      "uuid": "522d09d5-48cc-42de-b5ad-91020c83b8bf",
+                      "parentUUID": null,
+                      "isHook": false,
+                      "skipped": true
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [
+                    "522d09d5-48cc-42de-b5ad-91020c83b8bf"
+                  ],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3db479b7-2703-4d6b-a740-6f59fea35a27",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_search.test.js",
+      "file": "tests/e2e/specs/contact_search.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "90e74257-7649-4c89-b758-a40a1b2ebb74",
+          "title": "Busca",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "aefcd777-4624-4e75-a0d7-63cb715d5151",
+              "title": "Dado que eu tenho o seguinte contato Yuri Silva",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Quando faço a busca deste contato",
+                  "fullTitle": "Busca Dado que eu tenho o seguinte contato Yuri Silva Quando faço a busca deste contato",
+                  "timedOut": null,
+                  "duration": 1361,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_search.test.js/Quando faço a busca deste contato -- after each hook.png\"",
+                  "code": "cy.dash();\ncy.searchContact(contact.number); // cy.get('#loader', {timeout: 5000}).should('not.visible')",
+                  "err": {},
+                  "uuid": "9e0698d6-43e9-444d-b4c3-500721cfc9dd",
+                  "parentUUID": "aefcd777-4624-4e75-a0d7-63cb715d5151",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Devo ver somente este contato no dashboard",
+                  "fullTitle": "Busca Dado que eu tenho o seguinte contato Yuri Silva Devo ver somente este contato no dashboard",
+                  "timedOut": null,
+                  "duration": 31,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_search.test.js/Devo ver somente este contato no dashboard -- after each hook.png\"",
+                  "code": "cy.contactItem().should('have.length', 1);\ncy.contactItem().contains(contact.name);\ncy.contactItem().contains(contact.description);",
+                  "err": {},
+                  "uuid": "30a5c960-be98-44b3-b133-213ca14a4935",
+                  "parentUUID": "aefcd777-4624-4e75-a0d7-63cb715d5151",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "9e0698d6-43e9-444d-b4c3-500721cfc9dd",
+                "30a5c960-be98-44b3-b133-213ca14a4935"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1392,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "e4c6655d-36c4-4a0d-8b47-070d00ec090e",
+              "title": "Quando busco por um contato não cadastrado",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Deve retornar mensagem de alerta",
+                  "fullTitle": "Busca Quando busco por um contato não cadastrado Deve retornar mensagem de alerta",
+                  "timedOut": null,
+                  "duration": 431,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_search.test.js/Deve retornar mensagem de alerta -- after each hook.png\"",
+                  "code": "cy.get('.message-body').contains('Contato não encontrado :(');",
+                  "err": {},
+                  "uuid": "a958053e-ec77-4ca1-9468-94ff06c9fe96",
+                  "parentUUID": "e4c6655d-36c4-4a0d-8b47-070d00ec090e",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "a958053e-ec77-4ca1-9468-94ff06c9fe96"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 431,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "87582aa1-9ea6-4918-a6e0-162112a6df6e",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_talk.test.js",
+      "file": "tests/e2e/specs/contact_talk.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "008a320b-0882-4b76-8a76-4843b854b513",
+          "title": "Conversar",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "397a8104-39c5-4b10-96a6-287cd7b54554",
+              "title": "Dado que Amanda Silva é um bom contato",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Quando acesso o dashboard",
+                  "fullTitle": "Conversar Dado que Amanda Silva é um bom contato Quando acesso o dashboard",
+                  "timedOut": null,
+                  "duration": 1002,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_talk.test.js/Quando acesso o dashboard -- after each hook.png\"",
+                  "code": "cy.dash();",
+                  "err": {},
+                  "uuid": "1425f35e-7375-4ad9-8b9f-0d207e5cb106",
+                  "parentUUID": "397a8104-39c5-4b10-96a6-287cd7b54554",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Devo ver a propriedade href com o link do Whatsapp Web",
+                  "fullTitle": "Conversar Dado que Amanda Silva é um bom contato Devo ver a propriedade href com o link do Whatsapp Web",
+                  "timedOut": null,
+                  "duration": 12,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_talk.test.js/Devo ver a propriedade href com o link do Whatsapp Web -- after each hook.png\"",
+                  "code": "const externalLink = `https://api.whatsapp.com/send?phone=55${contact.number}`;\ncy.get(`a[href$=\"${contact.number}\"]`).should('have.attr', 'href', externalLink);",
+                  "err": {},
+                  "uuid": "626dd88b-add9-4adc-ab61-3b8ef11c48f4",
+                  "parentUUID": "397a8104-39c5-4b10-96a6-287cd7b54554",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "1425f35e-7375-4ad9-8b9f-0d207e5cb106",
+                "626dd88b-add9-4adc-ab61-3b8ef11c48f4"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1014,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d445df36-f0d2-4260-805b-0b56fdefad30",
+      "title": "",
+      "fullFile": "tests/e2e/specs/login.test.js",
+      "file": "tests/e2e/specs/login.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "72e939e9-d4c3-4f50-9cc2-4d647bc5d5fb",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "ec48dc4b-53a3-4f01-80e7-c5273c08da8b",
+              "title": "Quando submeto credenciais válidas",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Deve exibir a área logada",
+                  "fullTitle": "Login Quando submeto credenciais válidas Deve exibir a área logada",
+                  "timedOut": null,
+                  "duration": 1203,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/login.test.js/Deve exibir a área logada -- after each hook.png\"",
+                  "code": "cy.contains('h4', 'Seu gerenciador digital de contatos').should('be.visible');",
+                  "err": {},
+                  "uuid": "53b52988-61dd-49e3-bba5-fe47d7e747b1",
+                  "parentUUID": "ec48dc4b-53a3-4f01-80e7-c5273c08da8b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "53b52988-61dd-49e3-bba5-fe47d7e747b1"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1203,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "22b2054e-3625-431d-ac2c-bb38d0f8863d",
+      "title": "",
+      "fullFile": "tests/e2e/specs/check_app_on.test.js",
+      "file": "tests/e2e/specs/check_app_on.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "889ea1ea-9748-4ba1-bb0b-18789c72e3d6",
+          "title": "Verifica se o app está online",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acesso a página inicial",
+              "fullTitle": "Verifica se o app está online Acesso a página inicial",
+              "timedOut": null,
+              "duration": 226,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"assets/screenshots/check_app_on.test.js/Acesso a página inicial -- after each hook.png\"",
+              "code": "cy.visit('/');",
+              "err": {},
+              "uuid": "a8060fcf-970c-41f6-be41-9730b5479a37",
+              "parentUUID": "889ea1ea-9748-4ba1-bb0b-18789c72e3d6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a8060fcf-970c-41f6-be41-9730b5479a37"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 226,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ec7bd6ef-d16d-4e81-beaa-c9e5ee5cfeed",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_remove.test.js",
+      "file": "tests/e2e/specs/contact_remove.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "245de6c0-fef7-4b0c-9f61-033112db2265",
+          "title": "Remover contato",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "24535554-86fd-4ae6-b932-207394d6b701",
+              "title": "Dado que Lucas Silva é um contato indesejado",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Quando apago este contato",
+                  "fullTitle": "Remover contato Dado que Lucas Silva é um contato indesejado Quando apago este contato",
+                  "timedOut": null,
+                  "duration": 1543,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_remove.test.js/Quando apago este contato -- after each hook.png\"",
+                  "code": "cy.dash();\ncy.removeContact(contact.number);",
+                  "err": {},
+                  "uuid": "6b99b7e3-0ef7-479d-af50-f290cc7120f9",
+                  "parentUUID": "24535554-86fd-4ae6-b932-207394d6b701",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Não deve ser exibido no dashboard",
+                  "fullTitle": "Remover contato Dado que Lucas Silva é um contato indesejado Não deve ser exibido no dashboard",
+                  "timedOut": null,
+                  "duration": 372,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_remove.test.js/Não deve ser exibido no dashboard -- after each hook.png\"",
+                  "code": "cy.searchContact(contact.number);\ncy.get('.message-body').contains('Contato não encontrado :(');",
+                  "err": {},
+                  "uuid": "8bf3828e-bae7-4974-bcd0-e971fdfb46a1",
+                  "parentUUID": "24535554-86fd-4ae6-b932-207394d6b701",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "6b99b7e3-0ef7-479d-af50-f290cc7120f9",
+                "8bf3828e-bae7-4974-bcd0-e971fdfb46a1"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1915,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "bd380b53-9c05-4d54-9f8d-47005413a276",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_save.test.js",
+      "file": "tests/e2e/specs/contact_save.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1e77ce92-1f9a-40f1-be07-657205156311",
+          "title": "Cadastro de contatos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "b4af13de-0450-4685-83ed-ecfe5266c04e",
+              "title": "Novo contato",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "551045fc-7b56-4247-88b9-52965b229e47",
+                  "title": "Quando submeto o cadastro completo",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Deve cadastrar este contato",
+                      "fullTitle": "Cadastro de contatos Novo contato Quando submeto o cadastro completo Deve cadastrar este contato",
+                      "timedOut": null,
+                      "duration": 18,
+                      "state": "failed",
+                      "speed": null,
+                      "pass": false,
+                      "fail": true,
+                      "pending": false,
+                      "context": "\"assets/screenshots/contact_save.test.js/Deve cadastrar este contato -- after each hook.png\"",
+                      "code": "cy.contactList().contains(contact.name);",
+                      "err": {
+                        "message": "AxiosError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Request failed with status code 409\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `after each` hook we are skipping all of the remaining tests.",
+                        "estack": "AxiosError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Request failed with status code 409\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `after each` hook we are skipping all of the remaining tests.\n    at nt (http://localhost:8080/js/chunk-vendors.c98cae21.js:21:27412)\n    at XMLHttpRequest.u (http://localhost:8080/js/chunk-vendors.c98cae21.js:21:30456)",
+                        "diff": null
+                      },
+                      "uuid": "796774c6-33b0-4c2c-884b-c29fc4d3b3fc",
+                      "parentUUID": "551045fc-7b56-4247-88b9-52965b229e47",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [
+                    "796774c6-33b0-4c2c-884b-c29fc4d3b3fc"
+                  ],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 18,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "b3487ca5-0a77-401b-90c7-10792ef5d37a",
+                  "title": "Quando submeto o cadastro sem o nome",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Deve exibir a notificação Nome  obrigatrio",
+                      "fullTitle": "Cadastro de contatos Novo contato Quando submeto o cadastro sem o nome Deve exibir a notificação Nome  obrigatrio",
+                      "timedOut": null,
+                      "duration": 0,
+                      "state": "skipped",
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "//Este código louco é para tirar os caracteres especiais da const expectNotice e vai substituir eles por nada\n// cy.loginAlert(expectMessage).should('be.visible')\ncy.alertName().contains(expectMessage);",
+                      "err": {},
+                      "uuid": "518da8cf-dded-489d-bea5-f281a00fe7df",
+                      "parentUUID": null,
+                      "isHook": false,
+                      "skipped": true
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [
+                    "518da8cf-dded-489d-bea5-f281a00fe7df"
+                  ],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "ec75c8a3-7095-4a9d-bf1e-3d62c18b3a13",
+                  "title": "Quando submeto o cadastro sem o WhatsApp",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Deve exibir a nitificação: WhatsApp é obrigatório.",
+                      "fullTitle": "Cadastro de contatos Novo contato Quando submeto o cadastro sem o WhatsApp Deve exibir a nitificação: WhatsApp é obrigatório.",
+                      "timedOut": null,
+                      "duration": 0,
+                      "state": "skipped",
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "cy.alertNumber().contains(expectMessage);",
+                      "err": {},
+                      "uuid": "7871bb01-5d46-4d54-b750-bd1a6ef58adf",
+                      "parentUUID": null,
+                      "isHook": false,
+                      "skipped": true
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [
+                    "7871bb01-5d46-4d54-b750-bd1a6ef58adf"
+                  ],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "559fe4f2-b218-4d3a-8a43-0fe841454627",
+                  "title": "Quando submeto o cadastro sem o assunto",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Deve exibir a nitificação: Assunto é obrigatório.",
+                      "fullTitle": "Cadastro de contatos Novo contato Quando submeto o cadastro sem o assunto Deve exibir a nitificação: Assunto é obrigatório.",
+                      "timedOut": null,
+                      "duration": 0,
+                      "state": "skipped",
+                      "speed": null,
+                      "pass": false,
+                      "fail": false,
+                      "pending": false,
+                      "context": null,
+                      "code": "cy.alertDesc().contains(expectMessage);",
+                      "err": {},
+                      "uuid": "c91e6c71-b460-4354-bbfe-2ea67d3f80b8",
+                      "parentUUID": null,
+                      "isHook": false,
+                      "skipped": true
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [
+                    "c91e6c71-b460-4354-bbfe-2ea67d3f80b8"
+                  ],
+                  "duration": 0,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "99036bb9-9275-4595-bf7a-0144493b8351",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_search.test.js",
+      "file": "tests/e2e/specs/contact_search.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a2f2288b-ede6-4f84-ae1a-2265d9c7160f",
+          "title": "Busca",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "82ca816f-6fd4-49ba-928d-5cc3e0c364f8",
+              "title": "Dado que eu tenho o seguinte contato Yuri Silva",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Quando faço a busca deste contato",
+                  "fullTitle": "Busca Dado que eu tenho o seguinte contato Yuri Silva Quando faço a busca deste contato",
+                  "timedOut": null,
+                  "duration": 1349,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_search.test.js/Quando faço a busca deste contato -- after each hook.png\"",
+                  "code": "cy.dash();\ncy.searchContact(contact.number); // cy.get('#loader', {timeout: 5000}).should('not.visible')",
+                  "err": {},
+                  "uuid": "16ccbda4-f7e8-4eb6-b920-eb24e1113afe",
+                  "parentUUID": "82ca816f-6fd4-49ba-928d-5cc3e0c364f8",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Devo ver somente este contato no dashboard",
+                  "fullTitle": "Busca Dado que eu tenho o seguinte contato Yuri Silva Devo ver somente este contato no dashboard",
+                  "timedOut": null,
+                  "duration": 32,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_search.test.js/Devo ver somente este contato no dashboard -- after each hook.png\"",
+                  "code": "cy.contactItem().should('have.length', 1);\ncy.contactItem().contains(contact.name);\ncy.contactItem().contains(contact.description);",
+                  "err": {},
+                  "uuid": "7ae96d2f-0067-437c-a21d-eb76b66c0c5f",
+                  "parentUUID": "82ca816f-6fd4-49ba-928d-5cc3e0c364f8",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "16ccbda4-f7e8-4eb6-b920-eb24e1113afe",
+                "7ae96d2f-0067-437c-a21d-eb76b66c0c5f"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1381,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "cec6911b-c680-4a2c-8be4-badebb11f71b",
+              "title": "Quando busco por um contato não cadastrado",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Deve retornar mensagem de alerta",
+                  "fullTitle": "Busca Quando busco por um contato não cadastrado Deve retornar mensagem de alerta",
+                  "timedOut": null,
+                  "duration": 430,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_search.test.js/Deve retornar mensagem de alerta -- after each hook.png\"",
+                  "code": "cy.get('.message-body').contains('Contato não encontrado :(');",
+                  "err": {},
+                  "uuid": "f24077d6-2146-4450-bc60-1dae2a5b32b1",
+                  "parentUUID": "cec6911b-c680-4a2c-8be4-badebb11f71b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "f24077d6-2146-4450-bc60-1dae2a5b32b1"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 430,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8f26cbe0-6b82-41c9-9e89-4258a724dff7",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_talk.test.js",
+      "file": "tests/e2e/specs/contact_talk.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "22a317b7-852e-4eff-bffd-4039f7c35192",
+          "title": "Conversar",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "0af128b5-48e5-4182-a1eb-79a3b31907f6",
+              "title": "Dado que Amanda Silva é um bom contato",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Quando acesso o dashboard",
+                  "fullTitle": "Conversar Dado que Amanda Silva é um bom contato Quando acesso o dashboard",
+                  "timedOut": null,
+                  "duration": 1001,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_talk.test.js/Quando acesso o dashboard -- after each hook.png\"",
+                  "code": "cy.dash();",
+                  "err": {},
+                  "uuid": "29b8a1e3-d637-46e1-9d11-0bd2b63b3bab",
+                  "parentUUID": "0af128b5-48e5-4182-a1eb-79a3b31907f6",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Devo ver a propriedade href com o link do Whatsapp Web",
+                  "fullTitle": "Conversar Dado que Amanda Silva é um bom contato Devo ver a propriedade href com o link do Whatsapp Web",
+                  "timedOut": null,
+                  "duration": 14,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_talk.test.js/Devo ver a propriedade href com o link do Whatsapp Web -- after each hook.png\"",
+                  "code": "const externalLink = `https://api.whatsapp.com/send?phone=55${contact.number}`;\ncy.get(`a[href$=\"${contact.number}\"]`).should('have.attr', 'href', externalLink);",
+                  "err": {},
+                  "uuid": "5467744d-b9ef-4709-bd3a-ac5e2fd36915",
+                  "parentUUID": "0af128b5-48e5-4182-a1eb-79a3b31907f6",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "29b8a1e3-d637-46e1-9d11-0bd2b63b3bab",
+                "5467744d-b9ef-4709-bd3a-ac5e2fd36915"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1015,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b86f0167-f9f0-42ea-ad7b-d4bd4383989a",
+      "title": "",
+      "fullFile": "tests/e2e/specs/login.test.js",
+      "file": "tests/e2e/specs/login.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d2744934-af33-4a07-810e-1989bcc207d3",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "c85887be-f904-4780-bcf4-7c2e61e597ba",
+              "title": "Quando submeto credenciais válidas",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Deve exibir a área logada",
+                  "fullTitle": "Login Quando submeto credenciais válidas Deve exibir a área logada",
+                  "timedOut": null,
+                  "duration": 1210,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/login.test.js/Deve exibir a área logada -- after each hook.png\"",
+                  "code": "cy.contains('h4', 'Seu gerenciador digital de contatos').should('be.visible');",
+                  "err": {},
+                  "uuid": "059eef03-9688-4a4e-b3d3-b1729048621a",
+                  "parentUUID": "c85887be-f904-4780-bcf4-7c2e61e597ba",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "059eef03-9688-4a4e-b3d3-b1729048621a"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1210,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "79c7f08b-eea4-4075-9a44-b21e0435c8fe",
+      "title": "",
+      "fullFile": "tests/e2e/specs/check_app_on.test.js",
+      "file": "tests/e2e/specs/check_app_on.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "24118dcd-dd08-4132-a125-63d3367c790c",
+          "title": "Verifica se o app está online",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Acesso a página inicial",
+              "fullTitle": "Verifica se o app está online Acesso a página inicial",
+              "timedOut": null,
+              "duration": 246,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "\"assets/screenshots/check_app_on.test.js/Acesso a página inicial -- after each hook.png\"",
+              "code": "cy.visit('/');",
+              "err": {},
+              "uuid": "3b15b36e-f667-4737-b077-384082f024eb",
+              "parentUUID": "24118dcd-dd08-4132-a125-63d3367c790c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3b15b36e-f667-4737-b077-384082f024eb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 246,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0960b941-9b4f-404a-ac1c-355a3b5bc0df",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_remove.test.js",
+      "file": "tests/e2e/specs/contact_remove.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a25367f4-2a85-4825-afeb-a8b41d8e5035",
+          "title": "Remover contato",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "3ac60ca1-d0d4-4ea8-ba50-2b21b04cc76d",
+              "title": "Dado que Lucas Silva é um contato indesejado",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Quando apago este contato",
+                  "fullTitle": "Remover contato Dado que Lucas Silva é um contato indesejado Quando apago este contato",
+                  "timedOut": null,
+                  "duration": 1635,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_remove.test.js/Quando apago este contato -- after each hook.png\"",
+                  "code": "cy.dash();\ncy.removeContact(contact.number);",
+                  "err": {},
+                  "uuid": "4d9daa79-9482-4962-bbec-d0660dc855c9",
+                  "parentUUID": "3ac60ca1-d0d4-4ea8-ba50-2b21b04cc76d",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Não deve ser exibido no dashboard",
+                  "fullTitle": "Remover contato Dado que Lucas Silva é um contato indesejado Não deve ser exibido no dashboard",
+                  "timedOut": null,
+                  "duration": 374,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_remove.test.js/Não deve ser exibido no dashboard -- after each hook.png\"",
+                  "code": "cy.searchContact(contact.number);\ncy.get('.message-body').contains('Contato não encontrado :(');",
+                  "err": {},
+                  "uuid": "d11644dd-7c63-4693-9608-42b4d26ce01b",
+                  "parentUUID": "3ac60ca1-d0d4-4ea8-ba50-2b21b04cc76d",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "4d9daa79-9482-4962-bbec-d0660dc855c9",
+                "d11644dd-7c63-4693-9608-42b4d26ce01b"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 2009,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0020ff67-0a53-445f-b343-0c23c981dbce",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_save.test.js",
+      "file": "tests/e2e/specs/contact_save.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bdbb31ef-dfe5-4d14-b88f-a0547b0fbf36",
+          "title": "Cadastro de contatos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "4f453197-2103-4cf3-bbfd-3e28dd9dad22",
+              "title": "Novo contato",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [],
+              "suites": [
+                {
+                  "uuid": "75335a8d-b5da-496d-a49f-c045e7663d6b",
+                  "title": "Quando submeto o cadastro completo",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Deve cadastrar este contato",
+                      "fullTitle": "Cadastro de contatos Novo contato Quando submeto o cadastro completo Deve cadastrar este contato",
+                      "timedOut": null,
+                      "duration": 2619,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": "\"assets/screenshots/contact_save.test.js/Deve cadastrar este contato -- after each hook.png\"",
+                      "code": "cy.contactList().contains(contact.name);",
+                      "err": {},
+                      "uuid": "fb9dd240-5651-407b-b451-03f0e972bfc7",
+                      "parentUUID": "75335a8d-b5da-496d-a49f-c045e7663d6b",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "fb9dd240-5651-407b-b451-03f0e972bfc7"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 2619,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "70847ac1-9fde-49d5-8f7d-1639fed33c72",
+                  "title": "Quando submeto o cadastro sem o nome",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Deve exibir a notificação Nome  obrigatrio",
+                      "fullTitle": "Cadastro de contatos Novo contato Quando submeto o cadastro sem o nome Deve exibir a notificação Nome  obrigatrio",
+                      "timedOut": null,
+                      "duration": 1290,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": "\"assets/screenshots/contact_save.test.js/Deve exibir a notificação Nome  obrigatrio -- after each hook.png\"",
+                      "code": "//Este código louco é para tirar os caracteres especiais da const expectNotice e vai substituir eles por nada\n// cy.loginAlert(expectMessage).should('be.visible')\ncy.alertName().contains(expectMessage);",
+                      "err": {},
+                      "uuid": "318ff325-9540-438f-affc-efad08bd44d1",
+                      "parentUUID": "70847ac1-9fde-49d5-8f7d-1639fed33c72",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "318ff325-9540-438f-affc-efad08bd44d1"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 1290,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "461a8c4e-0196-4af3-bc8d-d4f0b644d2a0",
+                  "title": "Quando submeto o cadastro sem o WhatsApp",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Deve exibir a nitificação: WhatsApp é obrigatório.",
+                      "fullTitle": "Cadastro de contatos Novo contato Quando submeto o cadastro sem o WhatsApp Deve exibir a nitificação: WhatsApp é obrigatório.",
+                      "timedOut": null,
+                      "duration": 1288,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": "\"assets/screenshots/contact_save.test.js/Deve exibir a nitificação: WhatsApp é obrigatório. -- after each hook.png\"",
+                      "code": "cy.alertNumber().contains(expectMessage);",
+                      "err": {},
+                      "uuid": "37339498-d51e-4ba9-b809-46e8657158b4",
+                      "parentUUID": "461a8c4e-0196-4af3-bc8d-d4f0b644d2a0",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "37339498-d51e-4ba9-b809-46e8657158b4"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 1288,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                },
+                {
+                  "uuid": "18d67982-785e-4ddc-99e8-775af68eeb44",
+                  "title": "Quando submeto o cadastro sem o assunto",
+                  "fullFile": "",
+                  "file": "",
+                  "beforeHooks": [],
+                  "afterHooks": [],
+                  "tests": [
+                    {
+                      "title": "Deve exibir a nitificação: Assunto é obrigatório.",
+                      "fullTitle": "Cadastro de contatos Novo contato Quando submeto o cadastro sem o assunto Deve exibir a nitificação: Assunto é obrigatório.",
+                      "timedOut": null,
+                      "duration": 833,
+                      "state": "passed",
+                      "speed": "fast",
+                      "pass": true,
+                      "fail": false,
+                      "pending": false,
+                      "context": "\"assets/screenshots/contact_save.test.js/Deve exibir a nitificação: Assunto é obrigatório. -- after each hook.png\"",
+                      "code": "cy.alertDesc().contains(expectMessage);",
+                      "err": {},
+                      "uuid": "5e5dc432-5a5f-4b8d-9076-a6eb8cddf353",
+                      "parentUUID": "18d67982-785e-4ddc-99e8-775af68eeb44",
+                      "isHook": false,
+                      "skipped": false
+                    }
+                  ],
+                  "suites": [],
+                  "passes": [
+                    "5e5dc432-5a5f-4b8d-9076-a6eb8cddf353"
+                  ],
+                  "failures": [],
+                  "pending": [],
+                  "skipped": [],
+                  "duration": 833,
+                  "root": false,
+                  "rootEmpty": false,
+                  "_timeout": 2000
+                }
+              ],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "326020da-21b5-4f14-bc65-aa9bbeb6b602",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_search.test.js",
+      "file": "tests/e2e/specs/contact_search.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5b95484f-a108-4ba4-b323-cbc102bbea6b",
+          "title": "Busca",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "8b38400c-6bf0-4736-a8c1-2f40b755dc52",
+              "title": "Dado que eu tenho o seguinte contato Yuri Silva",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Quando faço a busca deste contato",
+                  "fullTitle": "Busca Dado que eu tenho o seguinte contato Yuri Silva Quando faço a busca deste contato",
+                  "timedOut": null,
+                  "duration": 1447,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_search.test.js/Quando faço a busca deste contato -- after each hook.png\"",
+                  "code": "cy.dash();\ncy.searchContact(contact.number); // cy.get('#loader', {timeout: 5000}).should('not.visible')",
+                  "err": {},
+                  "uuid": "ba321025-616f-473d-ac5e-ea0ec2d55c91",
+                  "parentUUID": "8b38400c-6bf0-4736-a8c1-2f40b755dc52",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Devo ver somente este contato no dashboard",
+                  "fullTitle": "Busca Dado que eu tenho o seguinte contato Yuri Silva Devo ver somente este contato no dashboard",
+                  "timedOut": null,
+                  "duration": 31,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_search.test.js/Devo ver somente este contato no dashboard -- after each hook.png\"",
+                  "code": "cy.contactItem().should('have.length', 1);\ncy.contactItem().contains(contact.name);\ncy.contactItem().contains(contact.description);",
+                  "err": {},
+                  "uuid": "d9cb2028-62ce-4149-b31e-f5e74699445d",
+                  "parentUUID": "8b38400c-6bf0-4736-a8c1-2f40b755dc52",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "ba321025-616f-473d-ac5e-ea0ec2d55c91",
+                "d9cb2028-62ce-4149-b31e-f5e74699445d"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1478,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "efe92956-6fb5-4776-a38b-c6b1d8d09865",
+              "title": "Quando busco por um contato não cadastrado",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Deve retornar mensagem de alerta",
+                  "fullTitle": "Busca Quando busco por um contato não cadastrado Deve retornar mensagem de alerta",
+                  "timedOut": null,
+                  "duration": 448,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_search.test.js/Deve retornar mensagem de alerta -- after each hook.png\"",
+                  "code": "cy.get('.message-body').contains('Contato não encontrado :(');",
+                  "err": {},
+                  "uuid": "d61c12fd-c1fa-4b91-9805-6aa73f15a4f8",
+                  "parentUUID": "efe92956-6fb5-4776-a38b-c6b1d8d09865",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "d61c12fd-c1fa-4b91-9805-6aa73f15a4f8"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 448,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6e044ba4-0bbc-45e6-869b-bfcdfb160d30",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_talk.test.js",
+      "file": "tests/e2e/specs/contact_talk.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "71f7e93b-0460-4182-8016-a7f995ffe789",
+          "title": "Conversar",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "a4bed7ce-6e3d-4dac-9ed2-742528af6fdc",
+              "title": "Dado que Amanda Silva é um bom contato",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Quando acesso o dashboard",
+                  "fullTitle": "Conversar Dado que Amanda Silva é um bom contato Quando acesso o dashboard",
+                  "timedOut": null,
+                  "duration": 1112,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_talk.test.js/Quando acesso o dashboard -- after each hook.png\"",
+                  "code": "cy.dash();",
+                  "err": {},
+                  "uuid": "167bef7f-8c7e-4309-a623-96e6e6b5157c",
+                  "parentUUID": "a4bed7ce-6e3d-4dac-9ed2-742528af6fdc",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Devo ver a propriedade href com o link do Whatsapp Web",
+                  "fullTitle": "Conversar Dado que Amanda Silva é um bom contato Devo ver a propriedade href com o link do Whatsapp Web",
+                  "timedOut": null,
+                  "duration": 15,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_talk.test.js/Devo ver a propriedade href com o link do Whatsapp Web -- after each hook.png\"",
+                  "code": "const externalLink = `https://api.whatsapp.com/send?phone=55${contact.number}`;\ncy.get(`a[href$=\"${contact.number}\"]`).should('have.attr', 'href', externalLink);",
+                  "err": {},
+                  "uuid": "7bd57294-8e0f-48e5-990e-d37462ac14f3",
+                  "parentUUID": "a4bed7ce-6e3d-4dac-9ed2-742528af6fdc",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "167bef7f-8c7e-4309-a623-96e6e6b5157c",
+                "7bd57294-8e0f-48e5-990e-d37462ac14f3"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1127,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "bab53053-e055-43a9-abc7-2486434f2a00",
+      "title": "",
+      "fullFile": "tests/e2e/specs/login.test.js",
+      "file": "tests/e2e/specs/login.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "048b1c73-eeef-463e-95cf-920f35397ca6",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "ac8e584d-298e-4e83-b1cb-3bedd9aae70f",
+              "title": "Quando submeto credenciais válidas",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Deve exibir a área logada",
+                  "fullTitle": "Login Quando submeto credenciais válidas Deve exibir a área logada",
+                  "timedOut": null,
+                  "duration": 1287,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/login.test.js/Deve exibir a área logada -- after each hook.png\"",
+                  "code": "cy.contains('h4', 'Seu gerenciador digital de contatos').should('be.visible');",
+                  "err": {},
+                  "uuid": "27a7e459-0fcc-40d2-b52c-deaab046b21d",
+                  "parentUUID": "ac8e584d-298e-4e83-b1cb-3bedd9aae70f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "27a7e459-0fcc-40d2-b52c-deaab046b21d"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1287,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": true,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

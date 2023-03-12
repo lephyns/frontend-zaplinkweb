@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-11T16:21:44.309Z",
+    "end": "2023-03-11T16:21:45.874Z",
+    "duration": 1565,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6e044ba4-0bbc-45e6-869b-bfcdfb160d30",
+      "title": "",
+      "fullFile": "tests/e2e/specs/contact_talk.test.js",
+      "file": "tests/e2e/specs/contact_talk.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "71f7e93b-0460-4182-8016-a7f995ffe789",
+          "title": "Conversar",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "a4bed7ce-6e3d-4dac-9ed2-742528af6fdc",
+              "title": "Dado que Amanda Silva é um bom contato",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Quando acesso o dashboard",
+                  "fullTitle": "Conversar Dado que Amanda Silva é um bom contato Quando acesso o dashboard",
+                  "timedOut": null,
+                  "duration": 1112,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_talk.test.js/Quando acesso o dashboard -- after each hook.png\"",
+                  "code": "cy.dash();",
+                  "err": {},
+                  "uuid": "167bef7f-8c7e-4309-a623-96e6e6b5157c",
+                  "parentUUID": "a4bed7ce-6e3d-4dac-9ed2-742528af6fdc",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Devo ver a propriedade href com o link do Whatsapp Web",
+                  "fullTitle": "Conversar Dado que Amanda Silva é um bom contato Devo ver a propriedade href com o link do Whatsapp Web",
+                  "timedOut": null,
+                  "duration": 15,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "\"assets/screenshots/contact_talk.test.js/Devo ver a propriedade href com o link do Whatsapp Web -- after each hook.png\"",
+                  "code": "const externalLink = `https://api.whatsapp.com/send?phone=55${contact.number}`;\ncy.get(`a[href$=\"${contact.number}\"]`).should('have.attr', 'href', externalLink);",
+                  "err": {},
+                  "uuid": "7bd57294-8e0f-48e5-990e-d37462ac14f3",
+                  "parentUUID": "a4bed7ce-6e3d-4dac-9ed2-742528af6fdc",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "167bef7f-8c7e-4309-a623-96e6e6b5157c",
+                "7bd57294-8e0f-48e5-990e-d37462ac14f3"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1127,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": true,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
