@@ -1,74 +1,76 @@
 <template>
-  <div>
-    <section class="hero is-fullheight is-align-items-center">
+  <div class="container">
+    <section class="hero is-fullheight">
       <div class="hero-body">
-        <div class="box">
-          <div class="container">
-            <p class="title has-text-centered">Olá</p>
-            <p class="subtitle">
-              Digite suas credenciais para acessar o ambiente.
-            </p>
+        <div class="columns">
+          <!--Agrupa as colunas-->
+          <div class="column is-6 custom-center">
+            <!--6 para ocupar metade da tela porque a tela toda tem 12 colunas-->
+            <img src="../assets/logo.svg" alt="Logo" />
+            <h1 class="title is-4">Seu gerenciados de contatos rápidos</h1>
+            <div class="card login">
+              <div class="card-content">
+                <form>
+                  <div class="field">
+                    <p class="control has-icons-left has-icons-right">
+                      <input
+                        name="email"
+                        class="input"
+                        v-model="form.email"
+                        type="email"
+                        placeholder="Seu e-mail"
+                      />
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="field">
+                    <p class="control has-icons-left">
+                      <input
+                        name="password"
+                        class="input"
+                        v-model="form.password"
+                        type="password"
+                        placeholder="Sua senha"
+                      />
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                      </span>
+                    </p>
+                  </div>
 
-            <div class="field">
-              <p class="control has-icons-left has-icons-right">
-                <input class="input" v-model="form.email" type="email" placeholder="E-mail" />
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
-              </p>
-            </div>
-
-            <div class="field">
-              <p class="control has-icons-left">
-                <input class="input" v-model="form.password" type="password" placeholder="Senha" />
-                <span class="icon is-small is-left">
-                  <i class="fas fa-lock"></i>
-                </span>
-              </p>
-            </div>
-
-            <article v-if="alertError" class="message is-danger">
+                  <article v-if="alertError" class="message is-danger"> <!--Classe do bulma-->
                     <div class="message-body">
                       {{ alertError }}
                     </div>
                   </article>
 
-            <div class="field">
-              <div class="control">
-                <label class="checkbox">
-                  <input type="checkbox" />
-                  Lembrar-se de mim
-                </label>
-              </div>
-            </div>
-
-            <article v-if="alertError" class="message is-danger"> <!--Classe do bulma-->
-                    <div class="message-body">
-                      {{ alertError }}
-                    </div>
-                  </article>
-
-          <div class="field is-grouped">
-              <div class="control">
-                <button type="button"
-                        @click="login()" class="button is-success">
-                  <!-- <router-link to="/dashboard">Login</router-link> -->
-                Login</button>
-              </div>
-              <div class="control">
-                <button class="button is-link is-light">
-                <router-link to="/signup">Criar uma conta</router-link></button>
+                  <div class="field">
+                    <p class="control">
+                      <button
+                        id="sigIn"
+                        type="button"
+                        @click="login()"
+                        class="button is-success"
+                      >
+                        Entrar
+                      </button>
+                    </p>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
-
-          <div class="container">
-            <img class="" src="../assets/dog_cat_2.png" alt="" />
+          <div class="column is-6">
+            <img src="../assets/landing.svg" alt="Marca" />
           </div>
         </div>
       </div>
     </section>
-
   </div>
 </template>
 
@@ -119,24 +121,17 @@ export default {
 </script>
 
 <style scoped>
-
-.hero {
-  background: #e7f6f2;
+.login {
+  width: 400px;
+  border-radius: 10px;
 }
 
-.title {
-  padding-bottom: 1rem;
-}
-
-img {
-  width: 300px;
-}
-
-.box {
+.custom-center {
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   align-items: center;
 }
-
 </style>
 
 <!-- 

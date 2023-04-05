@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Dashboard from '../views/Dashboard.vue'
-import SignUpView from '../views/SignUpView.vue'
 import Login from '../views/Login.vue'
 
 Vue.use(VueRouter)
@@ -11,11 +10,6 @@ const routes = [
     path: '/dashboard',
     name: 'Dashboard',
     component: Dashboard
-  },
-  {
-    path: '/signup',
-    name: 'signup',
-    component: SignUpView
   },
   {
     path: '/', //Rota principal
